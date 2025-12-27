@@ -709,7 +709,7 @@ details p {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.05fr;
-  gap: 18px;
+  gap: 32px; /* better separation between text & form */
   align-items: start;
 }
 
@@ -720,15 +720,15 @@ details p {
 }
 
 .contact-details {
-  margin-top: 14px;
+  margin-top: 16px;
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 
 .detail {
   border: 1px solid var(--line);
   border-radius: 16px;
-  padding: 12px;
+  padding: 14px;
   background: rgba(255, 255, 255, 0.7);
 }
 
@@ -746,62 +746,56 @@ details p {
   color: rgba(31, 35, 40, 0.82);
 }
 
+/* FORM */
 .form {
   border: 1px solid var(--line);
   border-radius: var(--r);
   background: rgba(255, 255, 255, 0.75);
-  padding: 16px;
+  padding: 28px; /* 🔑 more breathing room */
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
-}
 
-.form label:first-of-type {
-  margin-top: 0; /* Remove margin from first label */
-}
-
-.form .btn {
-  margin-top: 24px; /* More space above submit button */
-}
-
-.form .micro.muted {
-  margin-top: 12px; /* Space above disclaimer text */
-}
-
-label {
   display: grid;
-  gap: 6px;
-  margin-top: 12px;
+  gap: 18px; /* 🔑 single source of vertical spacing */
+}
+
+/* GROUPED ROWS */
+.form .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* LABELS */
+.form label {
+  display: grid;
+  gap: 8px;
   font-size: 13px;
 }
 
-input,
-select,
-textarea {
+/* INPUTS */
+.form input,
+.form select,
+.form textarea {
   border: 1px solid rgba(31, 35, 40, 0.16);
   border-radius: 14px;
-  padding: 12px 12px;
-  background: rgba(255, 255, 255, 0.95);
+  padding: 14px 14px;
+  background: rgba(255, 255, 255, 0.96);
   font: inherit;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
   outline: 2px solid rgba(138, 107, 79, 0.25);
   border-color: rgba(138, 107, 79, 0.5);
 }
 
-.row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
+/* CHECKBOX */
 .check {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-top: 18px;
-  margin-bottom: 6px;
+  margin-top: 6px;
 }
 
 .check input {
@@ -810,6 +804,14 @@ textarea:focus {
   padding: 0;
 }
 
+/* CTA + DISCLAIMER */
+.form .btn {
+  margin-top: 10px;
+}
+
+.form .micro.muted {
+  margin-top: 8px;
+}
 /* FOOTER – Dark Premium */
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
