@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hana Kuroda Photography | Timeless, Editorial Portraits</title>
+    <meta
+      name="description"
+      content="Tokyo-based photographer specializing in light, elegant portraits and intimate events. View portfolio, packages, and book a session."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Hana Kuroda</span>
+            <span class="brand-sub">Photography</span>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#pricing">Packages</a>
+          <a href="#contact" class="btn small">Book</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" hidden>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Packages</a>
+        <a href="#contact">Book</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">Tokyo • Available for travel</p>
+            <h1>
+              Timeless portraits & intimate stories captured with quiet
+              elegance.
+            </h1>
+            <p class="lead">
+              Light, refined, and authentic imagery for portraits, couples, and
+              small events. If you want photographs that feel like memories, not
+              poses, we’ll work beautifully together.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn primary" href="#contact">Book a Session</a>
+              <a class="btn ghost" href="#work">View Portfolio</a>
+            </div>
+
+            <div class="trust-row" aria-label="Highlights">
+              <div class="pill">7+ years experience</div>
+              <div class="pill">Editorial-inspired style</div>
+              <div class="pill">48–72h sneak peeks</div>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <img
+              src="assets/hero-01.jpg"
+              alt="Elegant portrait photograph in soft natural light"
+              loading="eager"
+            />
+            <div class="hero-frame" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK / GALLERY -->
+      <section id="work" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Selected Work</h2>
+            <p class="muted">
+              A curated set of recent sessions. Browse by category, tap an image
+              to enlarge, and read the story behind it.
+            </p>
+          </div>
+
+          <div class="filters" role="tablist" aria-label="Gallery categories">
+            <button
+              class="filter-btn is-active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              All
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="portraits"
+              role="tab"
+              aria-selected="false"
+            >
+              Portraits
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="couples"
+              role="tab"
+              aria-selected="false"
+            >
+              Couples
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="events"
+              role="tab"
+              aria-selected="false"
+            >
+              Events
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="commercial"
+              role="tab"
+              aria-selected="false"
+            >
+              Commercial
+            </button>
+          </div>
+
+          <div class="gallery" aria-label="Photo gallery">
+            <!-- Start strong -->
+            <figure class="card" data-category="portraits">
+              <button
+                class="card-media"
+                data-full="assets/gallery-01.jpg"
+                data-caption="Portrait session • Shinjuku • Soft window light"
+              >
+                <img
+                  src="assets/gallery-01.jpg"
+                  alt="Portrait photograph, soft window light"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-cap">
+                <span class="cap-title">Shinjuku Portrait</span>
+                <span class="cap-sub"
+                  >Soft window light • Calm, editorial feel</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-category="couples">
+              <button
+                class="card-media"
+                data-full="assets/gallery-02.jpg"
+                data-caption="Couple session • Meguro River • Light & airy storytelling"
+              >
+                <img
+                  src="assets/gallery-02.jpg"
+                  alt="Couple photograph near a river"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-cap">
+                <span class="cap-title">Meguro River Couple</span>
+                <span class="cap-sub">Light & airy • Natural movement</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-category="events">
+              <button
+                class="card-media"
+                data-full="assets/gallery-03.jpg"
+                data-caption="Intimate event • Ginza • Documentary-style moments"
+              >
+                <img
+                  src="assets/gallery-03.jpg"
+                  alt="Event photography candid moment"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-cap">
+                <span class="cap-title">Ginza Event</span>
+                <span class="cap-sub">Documentary moments • True emotion</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-category="commercial">
+              <button
+                class="card-media"
+                data-full="assets/gallery-04.jpg"
+                data-caption="Commercial • Product story • Minimal, premium lighting"
+              >
+                <img
+                  src="assets/gallery-04.jpg"
+                  alt="Commercial product photo with premium lighting"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-cap">
+                <span class="cap-title">Commercial Story</span>
+                <span class="cap-sub">Minimal • Premium lighting</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-category="portraits">
+              <button
+                class="card-media"
+                data-full="assets/gallery-05.jpg"
+                data-caption="Portrait session • Asakusa • Timeless tones"
+              >
+                <img
+                  src="assets/gallery-05.jpg"
+                  alt="Portrait photograph with timeless tones"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-cap">
+                <span class="cap-title">Asakusa Portrait</span>
+                <span class="cap-sub">Timeless tones • Gentle direction</span>
+              </figcaption>
+            </figure>
+
+            <!-- End strong -->
+            <figure class="card" data-category="couples">
+              <button
+                class="card-media"
+                data-full="assets/gallery-06.jpg"
+                data-caption="Couple session • Daikanyama • Cinematic softness"
+              >
+                <img
+                  src="assets/gallery-06.jpg"
+                  alt="Couple photograph in an urban setting"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-cap">
+                <span class="cap-title">Daikanyama Couple</span>
+                <span class="cap-sub"
+                  >Cinematic softness • Clean composition</span
+                >
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="work-cta">
+            <a class="btn ghost" href="#contact">Contact Me</a>
+            <p class="micro muted">
+              Want a gallery like this? I can tailor it to your style & niche.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section alt">
+        <div class="container about-grid">
+          <div class="about-media">
+            <img
+              src="assets/headshot-01.jpg"
+              alt="Professional headshot of the photographer"
+              loading="lazy"
+            />
+            <div class="badge">
+              <span class="badge-title">Based in Tokyo</span>
+              <span class="badge-sub">Available for travel</span>
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <h2>About Hana</h2>
+
+            <p class="about-story">
+              I became a photographer after realizing the moments I treasured
+              most were never the “perfect” ones. They were the quiet in-between
+              seconds: a hand squeeze, a soft laugh, a deep breath before a big
+              day. I wanted to preserve those feelings in a way that looks
+              beautiful now and still feels honest years later.
+            </p>
+
+            <div class="about-points">
+              <div class="point">
+                <h3>Style & niche</h3>
+                <p>
+                  My work leans <strong>light and airy</strong> with a subtle
+                  editorial finish, guided, but never stiff. I specialize in
+                  <strong>portraits, couples, and intimate events</strong> that
+                  value authenticity.
+                </p>
+              </div>
+
+              <div class="point">
+                <h3>Credentials</h3>
+                <p>
+                  <strong>7+ years</strong> shooting in Tokyo and beyond.
+                  Featured in local creative communities, with training in
+                  portrait direction and color work. (Replace this with your
+                  real awards/certifications.)
+                </p>
+              </div>
+
+              <div class="point">
+                <h3>Mission</h3>
+                <p>
+                  To create images that feel like you, refined, warm, and true
+                  so you can remember not just how it looked, but how it felt.
+                </p>
+              </div>
+            </div>
+
+            <blockquote class="quote">
+              “She made the session feel effortless. The photos look editorial,
+              but still completely us.”
+              <span class="quote-by">— A past client</span>
+            </blockquote>
+
+            <div class="about-cta">
+              <a class="btn primary" href="#contact">Book a Session</a>
+              <a class="btn ghost" href="#pricing">See Packages</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING / PACKAGES -->
+      <section id="pricing" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Packages</h2>
+            <p class="muted">
+              Choose a package that fits your needs. Custom quotes are available
+              for brand and commercial work.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3>Basic</h3>
+              <p class="price">¥18,000–¥28,000</p>
+              <p class="micro muted">
+                Great for quick portraits & simple sessions
+              </p>
+              <ul>
+                <li><strong>30 minutes</strong> session</li>
+                <li><strong>10 edited</strong> high-res images</li>
+                <li>Delivery: <strong>Online gallery</strong></li>
+                <li>Usage: <strong>Personal use</strong> (prints + social)</li>
+                <li>Turnaround: <strong>7 days</strong></li>
+              </ul>
+              <p class="micro muted">Add-on: extra edited image ¥1,200 each</p>
+              <a class="btn ghost full" href="#contact">Check availability</a>
+            </article>
+
+            <article class="price-card featured">
+              <div class="tag">Most Popular</div>
+              <h3>Standard</h3>
+              <p class="price">¥35,000–¥55,000</p>
+              <p class="micro muted">Balanced coverage + storytelling</p>
+              <ul>
+                <li><strong>60 minutes</strong> session</li>
+                <li><strong>25 edited</strong> high-res images</li>
+                <li>Delivery: <strong>Online gallery</strong></li>
+                <li>Usage: <strong>Personal use</strong></li>
+                <li>Turnaround: <strong>7–10 days</strong></li>
+              </ul>
+              <p class="micro muted">Includes 48–72h sneak peeks</p>
+              <a class="btn primary full" href="#contact">Book Standard</a>
+            </article>
+
+            <article class="price-card">
+              <h3>Premium</h3>
+              <p class="price">¥70,000+</p>
+              <p class="micro muted">Events, proposals, brand sets</p>
+              <ul>
+                <li><strong>2–3 hours</strong> coverage</li>
+                <li><strong>60+ edited</strong> images</li>
+                <li>Delivery: <strong>Online gallery</strong></li>
+                <li>Usage: <strong>Personal or commercial</strong></li>
+                <li>Turnaround: <strong>10–14 days</strong></li>
+              </ul>
+              <p class="micro muted">Albums / prints available</p>
+              <a class="btn ghost full" href="#contact">Request a quote</a>
+            </article>
+          </div>
+
+          <div class="faq">
+            <h3>FAQs</h3>
+            <div class="faq-grid">
+              <details>
+                <summary>Do you charge extra for travel?</summary>
+                <p>
+                  Travel within central Tokyo is included. Outside Tokyo may
+                  require a small travel fee depending on distance.
+                </p>
+              </details>
+              <details>
+                <summary>What if the weather is bad?</summary>
+                <p>
+                  We can reschedule once at no charge, or switch to an indoor
+                  location that suits your style.
+                </p>
+              </details>
+              <details>
+                <summary>Can I get the RAW files?</summary>
+                <p>
+                  I typically deliver edited high-resolution images. RAW files
+                  can be provided for an additional fee upon request.
+                </p>
+              </details>
+            </div>
+          </div>
+
+          <div class="pricing-bottom">
+            <p class="micro muted">
+              Payment: bank transfer or card (if enabled). Deposit required to
+              confirm booking. Balance due before delivery.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / BOOKING FORM -->
+      <section id="contact" class="section alt">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <h2>Book a Session</h2>
+            <p class="muted">
+              Tell me a bit about what you’re planning. I’ll reply within 24–48
+              hours with availability and next steps.
+            </p>
+
+            <div class="contact-details">
+              <div class="detail">
+                <span class="detail-label">Location</span>
+                <span class="detail-value"
+                  >Tokyo, Japan • Available for travel</span
+                >
+              </div>
+              <div class="detail">
+                <span class="detail-label">Turnaround</span>
+                <span class="detail-value"
+                  >7–10 days (sneak peeks in 48–72h)</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Netlify-compatible form (optional). Works as normal HTML form too. -->
+          <form class="form" name="inquiry" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="inquiry" />
+
+            <div class="row">
+              <label>
+                <span>First Name*</span>
+                <input
+                  name="firstName"
+                  type="text"
+                  autocomplete="given-name"
+                  required
+                />
+              </label>
+
+              <label>
+                <span>Last Name</span>
+                <input name="lastName" type="text" autocomplete="family-name" />
+              </label>
+            </div>
+
+            <div class="row">
+              <label>
+                <span>Email*</span>
+                <input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </label>
+
+              <label>
+                <span>Phone*</span>
+                <input name="phone" type="tel" autocomplete="tel" required />
+              </label>
+            </div>
+
+            <div class="row">
+              <label>
+                <span>Service Needed*</span>
+                <select name="serviceNeeded" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Wedding</option>
+                  <option>Couples</option>
+                  <option>Family</option>
+                  <option>Headshots</option>
+                  <option>Portraits</option>
+                  <option>Event</option>
+                  <option>Commercial</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Event / Session Date*</span>
+                <input
+                  name="sessionDate"
+                  type="date"
+                  required
+                  id="sessionDate"
+                />
+              </label>
+            </div>
+
+            <div class="row">
+              <label>
+                <span>Budget (optional)</span>
+                <select name="budget">
+                  <option value="" selected>Not sure yet</option>
+                  <option>Under ¥30,000</option>
+                  <option>¥30,000–¥60,000</option>
+                  <option>¥60,000–¥100,000</option>
+                  <option>¥100,000+</option>
+                </select>
+              </label>
+
+              <label>
+                <span>How did you hear about me?</span>
+                <input
+                  name="referralSource"
+                  type="text"
+                  placeholder="Instagram / friend / Google..."
+                />
+              </label>
+            </div>
+
+            <label>
+              <span>Location / Venue</span>
+              <input
+                name="venue"
+                type="text"
+                placeholder="City / venue / area"
+              />
+            </label>
+
+            <label>
+              <span>Message / Details*</span>
+              <textarea
+                name="message"
+                rows="5"
+                required
+                placeholder="Tell me about your vision, preferred location, vibe, and any questions."
+              ></textarea>
+            </label>
+
+            <label class="check">
+              <input name="bwPreference" type="checkbox" value="Yes" />
+              <span>I’d like a few black & white edits</span>
+            </label>
+
+            <button class="btn primary full" type="submit">Send Inquiry</button>
+
+            <p class="micro muted">
+              By submitting, you agree that you’ll be contacted about your
+              inquiry. (Replace with your preferred wording.)
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div class="footer-left">
+            <div class="footer-brand">
+              <span class="brand-mark" aria-hidden="true"></span>
+              <div>
+                <div class="footer-name">Hana Kuroda Photography</div>
+                <div class="micro muted">Tokyo • Available for travel</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-right" aria-label="Contact links">
+            <a
+              class="icon-link"
+              href="mailto:hello@example.com"
+              aria-label="Email"
+            >
+              <!-- Mail icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4 6.5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Zm0 2 8 5 8-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <a class="icon-link" href="tel:+819012345678" aria-label="Phone">
+              <!-- Phone icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.5 3.8h3.1l1.2 4-2 1.8c1.3 2.6 3.4 4.7 6 6l1.8-2 4 1.2v3.1c0 1-.8 1.9-1.9 1.9C10.6 20 4 13.4 4 5.7c0-1 .8-1.9 1.9-1.9Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <a class="icon-link" href="#" aria-label="Facebook">
+              <!-- Facebook icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14 8.5V7.2c0-.7.6-1.2 1.3-1.2h1.7V3.5h-2.2c-2.4 0-3.8 1.6-3.8 3.7v1.3H9v2.7h2v9h3v-9h2.4l.6-2.7H14Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <a class="icon-link" href="#" aria-label="Instagram">
+              <!-- Instagram icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7.5 3.8h9A3.7 3.7 0 0 1 20.2 7.5v9a3.7 3.7 0 0 1-3.7 3.7h-9A3.7 3.7 0 0 1 3.8 16.5v-9A3.7 3.7 0 0 1 7.5 3.8Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M17.2 6.9h.01"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <p class="micro muted">
+            © <span id="year"></span> Hana Kuroda. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Lightbox -->
+    <div
+      class="lightbox"
+      hidden
+      aria-label="Image viewer"
+      role="dialog"
+      aria-modal="true"
+    >
+      <button class="lightbox-close" aria-label="Close viewer">×</button>
+      <figure class="lightbox-figure">
+        <img class="lightbox-img" alt="" />
+        <figcaption class="lightbox-cap"></figcaption>
+      </figure>
+      <button class="lightbox-prev" aria-label="Previous image">‹</button>
+      <button class="lightbox-next" aria-label="Next image">›</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
